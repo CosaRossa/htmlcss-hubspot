@@ -15,7 +15,17 @@
   display: table;
   clear: both;
 }
-/* header fixed */
+
+/* colonne */
+.colonna12l {
+  float: left;
+  width: 12%;
+  /* DEBUG:  */
+  background-color: red;
+  height: 80px;
+  border: 1px solid black;
+}
+
 .colonna21l{
   float: left;
   width: 21%;
@@ -29,10 +39,19 @@
   /* DEBUG:  */
   height: 80px;
 }
-/* header navbar e main free */
-.colonna12l {
+
+.colonna25l {
   float: left;
-  width: 12%;
+  width: 25%;
+  /* DEBUG:  */
+  background-color: red;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.colonna40l {
+  float: left;
+  width: 40%;
   /* DEBUG:  */
   background-color: red;
   height: 80px;
@@ -56,31 +75,17 @@
   height: 80px;
   border: 1px solid black;
 }
-/* main tris e table */
-.colonna25l {
-  float: left;
-  width: 25%;
-  /* DEBUG:  */
-  background-color: red;
-  height: 80px;
-  border: 1px solid black;
-}
 
-.colonna40l {
-  float: left;
-  width: 40%;
-  /* DEBUG:  */
-  background-color: red;
-  height: 80px;
-  border: 1px solid black;
+/* Orange button */
+.orangebutton {
+  border: 2px solid #ff8141;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: #fff !important;
+  background-color: #ff8141;
 }
-
 
 /* Header */
-header {
-  /* DEBUG:  */
-  background-color: yellow;
-}
 
 header .fixed {
   background-color: #ededed;
@@ -109,7 +114,7 @@ header .fixed .text a {
 
 header .fixed .text .borderight {
   border-right: 1px solid #777;
-  padding: 3%
+  padding-right: 3%
 }
 
 header .fixed .text #login {
@@ -121,11 +126,7 @@ header .fixed .text #login {
 }
 
 header .fixed .text .orangebutton {
-  border: 2px solid #ff8141;
   padding: 5px 3%;
-  border-radius: 5px;
-  color: #fff;
-  background-color: #ff8141;
 }
 
 header .main-header .text {
