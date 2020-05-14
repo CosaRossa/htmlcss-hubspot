@@ -1,0 +1,123 @@
+/* Regole genrali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.centratura {
+  padding: 0 10%;
+}
+
+/* Regole di griglia */
+.riga::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* header fixed */
+.colonna20l{
+  float: left;
+  width: 20%;
+  /* DEBUG:  */
+  background-color: red;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.colonna20r{
+  float: right;
+  width: 20%;
+  /* DEBUG:  */
+  background-color: red;
+  height: 80px;
+  border: 1px solid black;
+}
+/* header navbar e main free */
+.colonna12l {
+  float: left;
+  width: 12%;
+  /* DEBUG:  */
+  background-color: red;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.colonna40r {
+  float: right;
+  width: 40%;
+  /* DEBUG:  */
+  background-color: red;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.colonna50r {
+  float: right;
+  width: 50%;
+  /* DEBUG:  */
+  background-color: red;
+  height: 80px;
+  border: 1px solid black;
+}
+/* main tris e table */
+.colonna25l {
+  float: left;
+  width: 25%;
+  /* DEBUG:  */
+  background-color: red;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.colonna40l {
+  float: left;
+  width: 40%;
+  /* DEBUG:  */
+  background-color: red;
+  height: 80px;
+  border: 1px solid black;
+}
+
+header {
+  /* DEBUG:  */
+  background-color: yellow;
+}
+
+header .text {
+  /* DEBUG:  */
+  width: 45%;
+  height: 100px;
+  background-color: red;
+}
+
+main {
+  /* DEBUG:  */
+  background-color: blue;
+}
+
+main .cubo {
+  /* DEBUG:  */
+  background-color: red;
+  height: 80px;
+  border: 1px solid black;
+}
+
+main .tt {
+  /* DEBUG:  */
+  background-color: red;
+  height: 80px;
+  border: 1px solid black;
+}
+
+footer {
+  /* DEBUG:  */
+  background-color: green;
+}
+
+footer .contlang {
+  /* DEBUG:  */
+  background-color: red;
+  height: 80px;
+  border: 1px solid black;
+}
