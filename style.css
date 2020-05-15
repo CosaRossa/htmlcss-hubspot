@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #00323f;
 }
 
 .centratura {
@@ -17,27 +19,25 @@
 }
 
 /* colonne */
-.colonna12l {
+.colonna18l {
   float: left;
-  width: 12%;
+  width: 18%;
+}
+
+.colonna20l{
+  float: left;
+  width: 20%;
   /* DEBUG:  */
   height: 70px;
   border: 1px solid black;
 }
 
-.colonna21l{
-  float: left;
-  width: 21%;
-  /* DEBUG:  */
-  height: 70px;
-  border: 1px solid black;
-}
-
-.colonna21r{
+.colonna20r{
   float: right;
-  width: 21%;
+  width: 20%;
   /* DEBUG:  */
   height: 70px;
+  border: 1px solid black;
 }
 
 .colonna25l {
@@ -45,7 +45,15 @@
   width: 25%;
   /* DEBUG:  */
   background-color: red;
-  height: 80px;
+  height: 70px;
+  border: 1px solid black;
+}
+
+.colonna25r{
+  float: right;
+  width: 25%;
+  /* DEBUG:  */
+  height: 70px;
   border: 1px solid black;
 }
 
@@ -54,7 +62,7 @@
   width: 40%;
   /* DEBUG:  */
   background-color: red;
-  height: 80px;
+  height: 70px;
   border: 1px solid black;
 }
 
@@ -62,32 +70,41 @@
   float: right;
   width: 40%;
   /* DEBUG:  */
-  height: 80px;
+  height: 70px;
   border: 1px solid black;
 }
 
-.colonna50r {
+.colonna43r {
   float: right;
-  width: 50%;
+  width: 43%;
   /* DEBUG:  */
-  background-color: red;
-  height: 80px;
+  height: 70px;
   border: 1px solid black;
+}
+
+.colonna70r {
+  float: right;
+  width: 70%;
 }
 
 /* Orange button */
 .orangebutton {
   border: 2px solid #ff8141;
-  padding: 8px 12px;
+  padding: 14px 18px;
   border-radius: 5px;
   color: #fff !important;
   background-color: #ff8141;
+  text-decoration: none;
 }
 
 /* Header */
 
 /* Fixed */
 header .fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   background-color: #ededed;
   height: 70px;
   border-bottom: 2px solid #777;
@@ -107,7 +124,6 @@ header .fixed .text .fa-search {
 }
 
 header .fixed .text a {
-  color: #454545;
   text-decoration: none;
   margin: 0 3%;
 }
@@ -132,6 +148,7 @@ header .fixed .text .orangebutton {
 /* Navbar */
 header .navbar {
   height: 70px;
+  margin-top: 70px;
 }
 
 header .navbar img {
@@ -141,35 +158,111 @@ header .navbar img {
 
 header .link li {
   display: inline-block;
-  color: #777;
   margin: 0 2%;
   line-height: 70px;
 }
 
 header .link a {
   text-decoration: none;
-  color: #777;
   padding-right: 4px;
 }
 
 /* Main header */
+header .main-header {
+  height: 70vh;
+  background-image: url('img/jumbotron.png');
+  background-position: bottom;
+  background-size: cover;
+}
+
 header .main-header .text {
-  /* DEBUG:  */
   width: 45%;
-  height: 100px;
-  background-color: red;
 }
 
+header .main-header h1 {
+  font-size: 40px;
+  padding: 60px 0 30px;
+}
+
+header .main-header p{
+  margin-bottom: 40px;
+}
+
+header .main-header .info {
+  margin-top: 40px;
+  font-size: 13px;
+}
+
+/* Main */
 main {
-  /* DEBUG:  */
-  background-color: blue;
+  background-color: #ededed;;
 }
 
+/* Sezione Cubo */
 main .cubo {
-  /* DEBUG:  */
-  background-color: red;
-  height: 80px;
-  border: 1px solid black;
+  text-align: center;
+  padding: 40px 15%;
+}
+
+main .cubo img {
+  width: 250px;
+  margin: 0 auto;
+}
+
+main .cubo h3 {
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+/* Sezione Free */
+main .free .riga{
+  background-color: #fff;
+  box-shadow: 0px 0px 3px 3px #ddd;
+  border-radius: 7px;
+  padding: 55px 10% 70px;
+}
+
+main .free .img-butt {
+  text-align: center;
+}
+
+main .free img {
+  width: 160px;
+  margin-bottom: 35px;
+}
+
+main .free h3 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+main .free p {
+  margin-bottom: 23px;
+}
+
+main .free h4, main .free .hr {
+  display: inline-block;
+}
+
+main .free .hr{
+  width: 60%;
+  height: 2px;
+  background-color: #999;
+  margin: 5px 40px;
+}
+
+main .free .h4hr {
+  margin-bottom: 23px;
+}
+
+main .free li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+main .free li i {
+  color: #ff8141;
+  margin-right: 5px;
 }
 
 main .tt {
