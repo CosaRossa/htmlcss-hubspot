@@ -57,6 +57,11 @@
   border: 1px solid black;
 }
 
+.colonna30l {
+  float: left;
+  width: 30%;
+}
+
 .colonna40l {
   float: left;
   width: 40%;
@@ -95,6 +100,15 @@
   color: #fff !important;
   background-color: #ff8141;
   text-decoration: none;
+}
+
+p {
+  line-height: 1.7em;
+}
+
+.fa-check-circle{
+  color: #ff8141;
+  margin-right: 5px;
 }
 
 /* Header */
@@ -260,9 +274,45 @@ main .free li {
   margin-right: 20px;
 }
 
-main .free li i {
-  color: #ff8141;
-  margin-right: 5px;
+/* Sezione tris */
+main .tris .all {
+  margin: 50px 0;
+  padding: 25px 10% 40px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px 3px #ddd;
+  border-radius: 7px;
+}
+
+main .tris .colonna30l:nth-child(2) {
+  margin: 0 5%;
+}
+
+main .tris img {
+  height: 115px;
+}
+
+main .tris h3 {
+  font-size: 22px;
+  margin: 25px 0;
+}
+
+main .tris .sec1 {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #999
+}
+
+main .tris .sec2 h4 {
+  margin: 40px 0 30px;
+}
+
+main .tris ul {
+  margin-bottom: 70px;
+}
+
+main .tris li {
+  list-style: none;
+  text-align: left;
 }
 
 main .tt {
