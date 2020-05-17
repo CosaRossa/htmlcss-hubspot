@@ -336,11 +336,11 @@ main .table .all {
   border-right: 1px solid #fff;
   border-bottom: 1px solid #fff;
   position: relative;
+  height: 172px;
 }
 
 main .table img {
   width: 60px;
-  margin-top: 1px;
 }
 
 main .table .hub-acad {
