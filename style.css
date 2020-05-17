@@ -99,6 +99,7 @@ p {
 /* Fixed */
 header .fixed {
   position: fixed;
+  z-index: 999;
   width: 100%;
   top: 0;
   left: 0;
@@ -324,10 +325,27 @@ main .table .all {
   text-align: center;
   border-right: 1px solid #fff;
   border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+main .table img {
+  width: 60px;
+  margin-top: 1px;
+}
+
+main .table .hub-acad {
+  font-size: 13px;
+  position: absolute;
+  left: 28%;
+  top: 9%;
+}
+
+main .table .academy {
+  font-size: 23px;
 }
 
 main .table .all i{
-  font-size: 35px;
+  font-size: 40px;
 }
 
 main .table .fa-hubspot {
@@ -342,6 +360,31 @@ main .table .number {
 
 main .table .description {
   font-size: 13px;
+}
+
+main .table .cell4 {
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+main .table .cell8 {
+  margin-top: 12px;
+}
+
+main .table .cell8 strong {
+  font-size: 24px;
+}
+
+main .table .small {
+  font-size: 11px;
+}
+
+main #table #no-bord-row .all {
+  border-bottom: 0;
+}
+
+main .table .all.no-right {
+  border-right: 0;
 }
 
 /* Sezione customers */
@@ -447,6 +490,10 @@ footer .contlang a {
 /* Legal stuff */
 footer .copy {
   padding-top: 30px;
+}
+
+footer .copy img {
+  width: 100px;
 }
 
 footer .copy a {
