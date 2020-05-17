@@ -84,11 +84,17 @@
   text-decoration: none;
 }
 
+.orangebutton:hover {
+  background-color: #ffbb99;
+  border-color: #ffbb99;
+}
+
+/* paragrafi */
 p {
   line-height: 1.7em;
 }
 
-
+/* icona check */
 .fa-check-circle{
   color: #ff8141;
   margin-right: 5px;
@@ -137,6 +143,10 @@ header .fixed .text #login {
   border-radius: 5px;
   color: #ff8141;
   background-color: #fff;
+}
+
+header .fixed .text #login:hover {
+  background-color: #ffddcc;
 }
 
 header .fixed .text .orangebutton {
@@ -443,6 +453,14 @@ footer * {
 }
 
 /* Info */
+footer a:hover {
+  color: #99ccff;
+}
+
+footer i:hover {
+  color: #99ccff;
+}
+
 footer .info h4 {
   margin-bottom: 25px;
 }
