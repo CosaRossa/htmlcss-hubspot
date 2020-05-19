@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Hubspot</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
 
@@ -15,26 +15,54 @@
     <header>
 
       <!-- Header fixed -->
-      <div class="fixed centratura">
+      <div id="fixed" class="centratura">
 
         <div class="riga">
 
           <!-- Lingua -->
-          <div class="colonna20l">
+          <div class="colonna50l">
 
             <div class="text">
-              <i class="fas fa-globe-europe"></i>
-              <a class="borderight" href="#">
-                English
-                <i class="fas fa-caret-down"></i>
-              </a>
-              <a href="#">Contact us</a>
+
+              <div id="drop-link">
+                <i class="fas fa-globe-europe"></i>
+                <a class="eng" href="#">
+                  English
+                  <i class="fas fa-caret-down"></i>
+                </a>
+
+                <div id="dropdown-lang">
+                  <ul>
+                    <li>
+                      <a href="#">日本語</a>
+                    </li>
+                    <li>
+                      <a href="#">English</a>
+                    </li>
+                    <li>
+                      <a href="#">Deutsch</a>
+                    </li>
+                    <li>
+                      <a href="#">Espa&#241;ol</a>
+                    </li>
+                    <li>
+                      <a href="#">Portogu&#234;s</a>
+                    </li>
+                    <li>
+                      <a href="#">Fran&#231;ais</a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <a class="border-left" href="#">Contact us</a>
             </div>
 
           </div>
 
           <!-- Search e button -->
-          <div class="colonna25r">
+          <div id="login" class="colonna50l">
 
             <div class="text">
               <i class="fas fa-search"></i>
@@ -49,12 +77,12 @@
       </div>
 
       <!-- Navbar -->
-      <div class="navbar centratura">
+      <div id="navbar" class="centratura">
 
         <div class="riga">
 
           <!-- Logo -->
-          <div class="colonna18l">
+          <div class="colonna20l">
 
             <a href="#">
               <img src="img/logo.svg" alt="logo">
@@ -63,7 +91,7 @@
           </div>
 
           <!-- Link -->
-          <div class="colonna43r">
+          <div class="colonna80l">
 
             <div class="link">
               <ul>
@@ -71,7 +99,9 @@
                   <a href="#">Software</a>
                   <i class="fas fa-caret-down"></i>
                 </li>
-                <li><a href="#">Pricing</a></li>
+                <li>
+                  <a href="#">Pricing</a>
+                </li>
                 <li>
                   <a href="#">Resources</a>
                   <i class="fas fa-caret-down"></i>
@@ -94,7 +124,7 @@
       </div>
 
       <!-- Main Header -->
-      <div class="main-header centratura">
+      <div id="main-header" class="centratura">
 
         <div class="text">
           <h1>There's a better way to grow.</h1>
@@ -114,9 +144,9 @@
     <main>
 
       <!-- Sezione rubik -->
-      <section class="rubik centratura">
+      <section id="rubik" class="centratura">
 
-        <div class="cubo">
+        <div>
           <img src="img/cube.png" alt="cubo">
           <h3>Powerful Alone. Better Together</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -125,7 +155,7 @@
       </section>
 
       <!-- Sezione free -->
-      <section class="free centratura">
+      <section id="free" class="centratura">
 
         <div class="riga">
 
@@ -170,7 +200,7 @@
       </section>
 
       <!-- Sezione tris -->
-      <section class="tris centratura">
+      <section id="tris" class="centratura">
 
         <div class="riga">
 
@@ -341,13 +371,15 @@
 
             <div class="all">
 
-              <div class="hub-acad">
-                HubSpot
+              <div id="cell3">
+                <div class="hub-acad">
+                  HubSpot
+                </div>
+                <span class="academy">
+                  Academy
+                  <i class="fas fa-graduation-cap"></i>
+                </span>
               </div>
-              <span class="academy">
-                Academy
-                <i class="fas fa-graduation-cap"></i>
-              </span>
 
               <div class="number">
                 <strong>155K+</strong>
@@ -365,7 +397,7 @@
 
             <div class="all no-right">
 
-              <div class="cell4">
+              <div id="cell4">
                 INBOUND
               </div>
 
@@ -447,7 +479,7 @@
 
             <div class="all no-right">
 
-              <div class="cell8">
+              <div id="cell8">
                 <strong>growth</strong>
                 <span class="small">
                   HUB
@@ -470,17 +502,17 @@
       </section>
 
       <!-- Sezione customers -->
-      <section class="customers centratura">
+      <section id="customers" class="centratura">
         <div class="riga">
 
           <!-- Parte sx  -->
-          <div class="colonna20l">
+          <div class="colonna30l">
             <strong>64,500</strong>
             <p>Lorem ipsum dolor sit amet, consectetur  elit, sed do tempor HubSpot.</p>
           </div>
 
           <!-- Parte dx (aziende) -->
-          <div class="colonna50r">
+          <div class="colonna70l">
 
             <div class="loghi1">
               <div class="icon">
@@ -517,7 +549,7 @@
       </section>
 
       <!-- Sezione start -->
-      <section class="start centratura">
+      <section id="start" class="centratura">
 
         <div class="riga">
 
@@ -532,9 +564,9 @@
           </div>
 
           <!-- img donna -->
-          <div class="colonna40r">
+          <span class="woman">
             <img src="img/woman.webp" alt="">
-          </div>
+          </span>
 
         </div>
       </section>
@@ -546,7 +578,7 @@
     <footer>
 
       <!-- 4 colonne -->
-      <div class="info centratura">
+      <div id="info" class="centratura">
 
         <div class="riga">
 
@@ -667,9 +699,9 @@
       </div>
 
       <!-- lingue -->
-      <div class="lang centratura">
+      <div id="lang" class="centratura">
 
-        <div class="contlang">
+        <div id="contlang">
 
           <ul>
             <li>
@@ -696,11 +728,11 @@
       </div>
 
       <!-- legal stuff -->
-      <div class="copy centratura">
+      <div id="copy" class="centratura">
         <div class="riga">
 
           <!-- parte sx -->
-          <div class="colonna20l">
+          <div class="colonna50l">
             <img src="hubspot-logo-pack/hubspot-logo-black-and-white.png" alt="logo">
             <div class="copytx">
               Copyright &#169; 2019 HubSpot, Inc.
@@ -708,7 +740,7 @@
           </div>
 
           <!-- parte dx -->
-          <div class="colonna20r">
+          <div id="legal" class="colonna50l">
             <a href="#">Legal Stuff</a>
             <a href="#">Privacy Policy</a>
           </div>

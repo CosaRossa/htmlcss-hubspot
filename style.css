@@ -29,18 +29,8 @@
   width: 20%;
 }
 
-.colonna20r{
-  float: right;
-  width: 20%;
-}
-
 .colonna25l {
   float: left;
-  width: 25%;
-}
-
-.colonna25r{
-  float: right;
   width: 25%;
 }
 
@@ -49,29 +39,29 @@
   width: 30%;
 }
 
-.colonna40r {
-  float: right;
-  width: 40%;
-}
-
-.colonna43r {
-  float: right;
-  width: 43%;
-  }
-
 .colonna43l {
   float: left;
   width: 43%;
 }
 
-.colonna50r {
-  float: right;
+.colonna50l {
+  float: left;
   width: 50%;
+}
+
+.colonna70l {
+  float: left;
+  width: 70%;
 }
 
 .colonna70r {
   float: right;
   width: 70%;
+}
+
+.colonna80l {
+  float: left;
+  width: 80%;
 }
 
 /* Orange button */
@@ -94,16 +84,20 @@ p {
   line-height: 1.7em;
 }
 
-/* icona check */
-.fa-check-circle{
+/* icone */
+.fa-check-circle {
   color: #ff8141;
   margin-right: 5px;
+}
+
+.fa-caret-down {
+  color: #666;
 }
 
 /* Header */
 
 /* Fixed */
-header .fixed {
+header #fixed {
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -114,30 +108,74 @@ header .fixed {
   border-bottom: 2px solid #777;
 }
 
-header .fixed .text {
+header #fixed .text {
   line-height: 70px;
 }
 
-header .fixed .text .fa-globe-europe {
-  color: #454545;
-}
 
-header .fixed .text .fa-search {
-  color: #00c1c2;
-  margin-right: 3%
-}
-
-header .fixed .text a {
+header #fixed .text a {
   text-decoration: none;
   margin: 0 3%;
 }
 
-header .fixed .text .borderight {
-  border-right: 1px solid #777;
-  padding-right: 3%
+header #fixed .text .fa-globe-europe {
+  color: #454545;
+  margin-right: 5%;
 }
 
-header .fixed .text #login {
+header #fixed .text .fa-caret-down {
+  padding-left: 3%;
+}
+
+header #fixed .text .border-left {
+  border-left: 1px solid #777;
+  padding-left: 3%;
+  margin-left: 1%
+}
+
+header #fixed #drop-link {
+  display: inline-block;
+  width: 100px;
+}
+
+header #fixed #dropdown-lang {
+  position: fixed;
+  top: 60px;
+  left: 143px;
+  width: 114px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 1px 1px #eee;
+  border-radius: 7px;
+  z-index: 990;
+  padding: 10px 0;
+  display: none;
+}
+
+header #fixed #dropdown-lang li {
+  list-style: none;
+  line-height: 40px;
+  padding-left: 10px;
+}
+
+header #fixed #dropdown-lang li:hover {
+  background-color: #cceeff;
+}
+
+header #fixed #drop-link:hover #dropdown-lang {
+  display: block;
+}
+
+header #fixed #dropdown-lang:hover {
+  display: block;
+}
+
+header #fixed .text .fa-search {
+  color: #00c1c2;
+  margin-right: 2%;
+}
+
+header #fixed .text #login {
   border: 2px solid #ff8141;
   padding: 5px 3%;
   border-radius: 5px;
@@ -145,21 +183,26 @@ header .fixed .text #login {
   background-color: #fff;
 }
 
-header .fixed .text #login:hover {
+header #fixed .text #login:hover {
   background-color: #ffddcc;
 }
 
-header .fixed .text .orangebutton {
+header #fixed .text .orangebutton {
   padding: 5px 3%;
 }
 
-/* Navbar */
-header .navbar {
-  height: 70px;
-  margin-top: 70px;
+header #fixed #login.colonna50l {
+  text-align: right;
 }
 
-header .navbar img {
+/* Navbar */
+header #navbar {
+  height: 70px;
+  margin-top: 70px;
+  position: relative;
+}
+
+header #navbar img {
   width: 100px;
   margin-top: 20px;
 }
@@ -175,28 +218,33 @@ header .link a {
   padding-right: 4px;
 }
 
+header #navbar .colonna80l {
+  text-align: right;
+}
+
 /* Main header */
-header .main-header {
-  height: 70vh;
+header #main-header {
   background-image: url('img/jumbotron.png');
   background-position: bottom;
   background-size: cover;
 }
 
-header .main-header .text {
+header #main-header .text {
   width: 45%;
+  padding-bottom: 30vh;
+  padding-top: 10vh;
 }
 
-header .main-header h1 {
+header #main-header h1 {
   font-size: 40px;
-  padding: 60px 0 30px;
+  padding: 30px;
 }
 
-header .main-header p{
+header #main-header p{
   margin-bottom: 40px;
 }
 
-header .main-header .small {
+header #main-header .small {
   margin-top: 40px;
   font-size: 13px;
 }
@@ -207,69 +255,69 @@ main {
 }
 
 /* Sezione Cubo */
-main .cubo {
+main #rubik {
   text-align: center;
   padding: 40px 15%;
 }
 
-main .cubo img {
+main #rubik img {
   width: 250px;
   margin: 0 auto;
 }
 
-main .cubo h3 {
+main #rubik h3 {
   font-size: 28px;
   margin: 20px 0;
 }
 
 /* Sezione Free */
-main .free .riga{
+main #free .riga{
   background-color: #fff;
   box-shadow: 0px 0px 3px 3px #ddd;
   border-radius: 7px;
   padding: 55px 10% 70px;
 }
 
-main .free .img-butt {
+main #free .img-butt {
   text-align: center;
 }
 
-main .free img {
+main #free img {
   width: 160px;
   margin-bottom: 35px;
 }
 
-main .free h3 {
+main #free h3 {
   font-size: 22px;
   margin-bottom: 25px;
 }
 
-main .free p {
+main #free p {
   margin-bottom: 23px;
 }
 
-main .free h4, main .free .hr {
+main #free h4, main #free .hr {
   display: inline-block;
 }
 
-main .free .hr{
+main #free .hr{
   width: 60%;
   height: 2px;
   background-color: #999;
   margin: 5px 40px;
 }
 
-main .free .h4hr {
+main #free .h4hr {
   margin-bottom: 23px;
 }
 
-main .free li {
+main #free li {
   display: inline-block;
   margin-right: 20px;
 }
 
 /* Sezione tris */
-main .tris .all {
+main #tris .all {
   margin: 50px 0;
   padding: 25px 10% 40px;
   text-align: center;
@@ -278,33 +326,33 @@ main .tris .all {
   border-radius: 7px;
 }
 
-main .tris .colonna30l:nth-child(2) {
+main #tris .colonna30l:nth-child(2) {
   margin: 0 5%;
 }
 
-main .tris img {
+main #tris img {
   height: 115px;
 }
 
-main .tris h3 {
+main #tris h3 {
   font-size: 22px;
   margin: 25px 0;
 }
 
-main .tris .sec1 {
+main #tris .sec1 {
   padding-bottom: 50px;
   border-bottom: 1px solid #999
 }
 
-main .tris .sec2 h4 {
+main #tris .sec2 h4 {
   margin: 40px 0 30px;
 }
 
-main .tris ul {
+main #tris ul {
   margin-bottom: 70px;
 }
 
-main .tris li {
+main #tris li {
   list-style: none;
   text-align: left;
 }
@@ -339,27 +387,39 @@ main .table .all {
   height: 172px;
 }
 
+main #table #no-bord-row .all {
+  border-bottom: 0;
+}
+
+main .table .all.no-right {
+  border-right: 0;
+}
+
 main .table img {
   width: 60px;
-}
-
-main .table .hub-acad {
-  font-size: 13px;
-  position: absolute;
-  left: 28%;
-  top: 9%;
-}
-
-main .table .academy {
-  font-size: 23px;
 }
 
 main .table .all i{
   font-size: 40px;
 }
 
-main .table .fa-hubspot {
-  font-size: 18px;
+main .table .hub-acad {
+  font-size: 13px;
+  position: absolute;
+  left: 29%;
+  top: 10%;
+}
+
+main .table .academy {
+  font-size: 23px;
+}
+
+main .table .all .fa-graduation-cap {
+  font-size: 30px;
+}
+
+main .table #cell3 {
+  padding-top: 8px;
 }
 
 main .table .number {
@@ -372,12 +432,12 @@ main .table .description {
   font-size: 13px;
 }
 
-main .table .cell4 {
+main .table #cell4 {
   font-size: 24px;
   margin-top: 12px;
 }
 
-main .table .cell8 {
+main .table #cell8 {
   margin-top: 12px;
 }
 
@@ -389,54 +449,51 @@ main .table .small {
   font-size: 11px;
 }
 
-main #table #no-bord-row .all {
-  border-bottom: 0;
-}
-
-main .table .all.no-right {
-  border-right: 0;
-}
-
 /* Sezione customers */
-main .customers .riga {
-  padding: 50px 10%;
+main #customers .riga {
+  padding: 60px 10% 50px;
 }
 
-main .customers strong {
+main #customers .colonna70l {
+  text-align: right;
+  padding-left: 13%;
+}
+
+main #customers strong {
   font-size: 40px;
   display: inline-block;
   margin-bottom: 25px;
 }
 
-main .customers .icon {
+main #customers .icon {
   display: inline-block;
   width: 23%;
   text-align: center;
   font-size: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 /* Sezione start */
-main .start h3 {
+main #start h3 {
   font-size: 30px;
   padding: 40px 0 30px;
 }
 
-main .start p {
+main #start p {
   margin-bottom: 40px;
 }
 
-main .start .small {
+main #start .small {
   margin-top: 40px;
   font-size: 13px;
 }
 
-main .start img {
-  width: 65%;
-  margin-left: 25%;
+main #start img {
+  width: 30%;
+  margin-left: 23%;
 }
 
-main .start {
+main #start {
   padding-bottom: 60px;
 }
 
@@ -461,20 +518,20 @@ footer i:hover {
   color: #99ccff;
 }
 
-footer .info h4 {
+footer #info h4 {
   margin-bottom: 25px;
 }
 
-footer .info li {
+footer #info li {
   list-style: none;
   margin-bottom: 20px;
 }
 
-footer .info a {
+footer #info a {
   text-decoration: none;
 }
 
-footer .info a.button {
+footer #info a.button {
   display: inline-block;
   color: #00323f;
   background-color: #fff;
@@ -483,38 +540,42 @@ footer .info a.button {
   margin-bottom: 20px;
 }
 
-footer .info i {
+footer #info i {
   margin-right: 9%;
   margin-bottom: 110px;
 }
 
 /* Lingue */
-footer .contlang {
+footer #contlang {
   text-align: center;
   border-bottom: 1px solid #fff;
 }
 
-footer .contlang li {
+footer #contlang li {
   list-style: none;
   display: inline-block;
   margin-right: 3%;
   margin-bottom: 15px;
 }
 
-footer .contlang a {
+footer #contlang a {
   text-decoration: none;
 }
 
 /* Legal stuff */
-footer .copy {
+footer #copy {
   padding-top: 30px;
 }
 
-footer .copy img {
+footer #copy img {
   width: 100px;
 }
 
-footer .copy a {
+footer #copy a {
   text-decoration: none;
-  margin-right: 10%;
+  margin-right: 5%;
+}
+
+footer #copy #legal.colonna50l {
+  text-align: right;
 }
